@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #4C83FF, #6AA8FF, #A7C8FF);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor-botones {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 20px 40px;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            background: #4C83FF;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 250px;
+        }
+
+        .btn:hover {
+            background: #365FCC;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-botones">
+        <button class="btn" onclick="irCB()">CB</button>
+        <button class="btn" onclick="irFIE()">F I E</button>
+    </div>
+
+    <script>
+        function irCB() {
+            window.location.href = "";
+        }
+
+        function irFIE() {
+            window.location.href = "https://ing-yisus.github.io/TikiThree/";
+        }
+    </script>
+
+</body>
+</html>
